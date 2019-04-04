@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
 
-</selector>
+    <corners
+        android:radius="300dp" />
+
+    <size
+        android:width="300dp"
+        android:height="200dp"
+        />
+
+    <!--Use android:dashWidth="2dp" and android:dashGap="2dp"
+    to add dashes to your stroke-->
+
+    <gradient
+        android:startColor="@color/scheme_blue"
+        android:endColor="#e5f8ff"
+        android:angle="90"
+        />
+
+
+
+</shape>
