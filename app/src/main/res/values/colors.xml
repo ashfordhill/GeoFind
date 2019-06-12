@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#4b69f3</color>
+    <color name="menuOptionPink">#fba4cb</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="scheme_red">#FFA69E</color>
+    <color name="scheme_yellow">#fff4d3</color>
+    <color name="scheme_blue">#AED9E0</color>
+    <color name="scheme_grey">#5E6472</color>
+    <color name="scheme_green">#48ab97</color>
+    <color name="scheme_purple">#b19dd7</color>
+
+
+
+</resources>
