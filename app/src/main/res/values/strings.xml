@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GeoG</string>
+    <string name="app_name">GeoFind</string>
     <string name="pinpoint">Pinpoint</string>
     <string name="guessPin">Guess the pin</string>
     <string name="guessCapital">Guess the capital</string>

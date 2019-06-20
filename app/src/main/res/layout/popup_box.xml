@@ -31,7 +31,7 @@
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:background="@drawable/button_selector"
-            android:fontFamily="@font/fred"
+            android:fontFamily="@font/fredoka_one"
             android:text="Return to Menu"
             android:textSize="11dp"
             android:textColor="@drawable/button_text_selector" />/>
@@ -47,7 +47,7 @@
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:background="@drawable/button_selector"
-            android:fontFamily="@font/fred"
+            android:fontFamily="@font/fredoka_one"
             android:text="New Game"
             android:textSize="11dp"
             android:textColor="@drawable/button_text_selector" />

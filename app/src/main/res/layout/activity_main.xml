@@ -17,8 +17,7 @@
         android:background="@drawable/titlescreen"
         android:fontFamily="@font/spicy_rice"
         android:gravity="center"
-        android:text="Get   Good
-  Geography"
+        android:text="GeoFind"
         android:textAlignment="center"
         android:textColor="@color/scheme_green"
 
@@ -32,7 +31,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:fontFamily="@font/fred"
+        android:fontFamily="@font/fredoka_one"
         android:textSize="40dp"
         android:textColor="@drawable/button_text_selector"
         android:background="@drawable/button_selector"
@@ -47,7 +46,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/fred"
+        android:fontFamily="@font/fredoka_one"
         android:textSize="40dp"
         android:textColor="@drawable/button_text_selector"
         android:background="@drawable/button_selector"

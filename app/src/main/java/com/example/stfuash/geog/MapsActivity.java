@@ -1,9 +1,6 @@
 package com.example.stfuash.geog;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.Intent;
-import android.content.pm.ActivityInfo;
+
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
@@ -14,7 +11,6 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
@@ -30,12 +26,6 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -54,7 +44,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private String answerName; //string name of the answer to the game
     private int distanceTrue = 0;
 
-   //pulled from bundle passed by GameOptions, based on user location selection
+    //pulled from bundle passed by GameOptions, based on user location selection
     private int gameType = 0; //0 = US, 1 = EU, 2 = CN
 
     private static final String newGame = "New Game", confirm = "Confirm";
@@ -69,7 +59,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //Map starts based on game type
         Bundle b = getIntent().getExtras();
         if(b != null) {
-           gameType = b.getInt("map");
+            gameType = b.getInt("map");
         }
 
         //Generates a new location based on user selection
@@ -115,13 +105,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     pp.show();
                     pp.receiveString(distanceMessage);
 
-                    Typeface mTypeface = Typeface.createFromAsset(getAssets(),"fonts/fredoka.ttf");
-
-                    Button b1 = (Button) pp.findViewById(R.id.popup_newgameButton);
-                    Button b2 = (Button) pp.findViewById(R.id.popup_quitButton);
-
-                    b1.setTypeface(mTypeface);
-                    b2.setTypeface(mTypeface);
+//                    Typeface mTypeface = Typeface.createFromAsset(getAssets(),"fonts/fredoka.ttf");
+//
+//                    Button b1 = (Button) pp.findViewById(R.id.popup_newgameButton);
+//                    Button b2 = (Button) pp.findViewById(R.id.popup_quitButton);
+//
+//                    b1.setTypeface(mTypeface);
+//                    b2.setTypeface(mTypeface);
 
                 } else {
                     //do
@@ -237,10 +227,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void showAnswerLocation(View view) {
         //if(userClicked) {
 
-            markers.add(mMap.addMarker(new MarkerOptions().position(
-                    answerCoord).title("Answer")));
+        markers.add(mMap.addMarker(new MarkerOptions().position(
+                answerCoord).title("Answer")));
 
-            gameover=true;
+        gameover=true;
         //}
 
         //Add private method to show a path and distance
